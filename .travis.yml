@@ -7,6 +7,9 @@ script:
     - cd tools
     - ls -la
     - chmod a+x *
+    - ./nask
+    - ./gas2nask
+    - ./cc1
     - ls -la
     - cd ../src
     - pwd

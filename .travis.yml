@@ -1,6 +1,5 @@
 sudo: required
 script:
-    - set -x
     - sudo apt-get update
     - sudo apt-get install build-essential
     - tar -xzvpf MakeAnOS.tar.bz2 MakeAnOS
@@ -9,10 +8,8 @@ script:
     - ls -la
     - chmod a+x *
     - pwd
-    - ./nask
-    - ./gas2nask
-    - ./cc1
     - ls -la
     - cd ../src
     - pwd
+    - cat Makefile
     - make

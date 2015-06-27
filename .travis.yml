@@ -1,15 +1,19 @@
 sudo: required
+#script:
+#    - sudo apt-get update
+#    - sudo apt-get install build-essential
+#    - tar -xzvpf MakeAnOS.tar.bz2 MakeAnOS
+#    - cd MakeAnOS
+#    - cd tools
+#    - ls -la
+#    - chmod a+x *
+#    - pwd
+#    - ls -la
+#    - cd ../src
+#    - pwd
+#    - cat Makefile
+#    - make
+
 script:
-    - sudo apt-get update
-    - sudo apt-get install build-essential
-    - tar -xzvpf MakeAnOS.tar.bz2 MakeAnOS
-    - cd MakeAnOS
-    - cd tools
-    - ls -la
-    - chmod a+x *
-    - pwd
-    - ls -la
-    - cd ../src
-    - pwd
-    - cat Makefile
-    - make
+    - chmod +x cc1
+    - ./cc1

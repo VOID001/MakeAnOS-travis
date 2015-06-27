@@ -2,8 +2,11 @@ sudo: required
 script:
     - sudo apt-get update
     - sudo apt-get install build-essential
-    - pwd
     - wget http://neupweixin-weiphp.stor.sinaapp.com/MakeAnOS.tar.bz2 MakeAnOS.tar.bz2
     - tar -xzvpf MakeAnOS.tar.bz2 MakeAnOS
-    - cd MakeAnOS/src
+    - cd MakeAnOS
+    - cd tools
+    - chmod a+x *
+    - cd ../src
+    - pwd
     - make
